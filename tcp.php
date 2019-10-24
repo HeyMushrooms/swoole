@@ -6,7 +6,7 @@
  * Time: 13:55
  */
 //创建Server对象，监听 127.0.0.1:9501端口
-$serv = new Swoole\Server("127.0.0.1", 9501);
+$serv = new Swoole\Server("47.106.204.223", 9501);
 
 $serv->set(
     [
