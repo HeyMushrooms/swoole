@@ -23,7 +23,9 @@ $serv->on('Connect', function ($serv, $fd ,$rector_id) {
 
 //监听数据接收事件
 $serv->on('Receive', function ($serv, $fd, $from_id, $data) {
+    echo "Client:".$from_id.'-data-'.$data;
     $serv->send($fd, "Server: ".$data);
+
 });
 
 //监听连接关闭事件
