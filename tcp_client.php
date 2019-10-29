@@ -6,7 +6,7 @@
  * Time: 13:40
  */
 //链接swool的服务
-$cilent = new swoole_client(SWOOLE_SOCK_TCP);
+$client = new swoole_client(SWOOLE_SOCK_TCP);
 
 $res = $client->connect('47.106.204.223',9501);
 if(!$res){
