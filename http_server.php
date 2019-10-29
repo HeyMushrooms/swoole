@@ -7,6 +7,8 @@
  */
     $http =  new swoole_http_server('0.0.0.0',9503);
     $http->on('request',function($request,$response){
-       $response->end('<h1>HTTP_SERVER</h1>');
+        $get = $request->get;
+        var_dump($get);
+        $response->end('<h1>HTTP_SERVER</h1>');
     });
     $http->start();
