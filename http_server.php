@@ -9,3 +9,4 @@
     $http->on('request',function($request,$response){
        $response->end('<h1>HTTP_SERVER</h1>');
     });
+    $http->start();
