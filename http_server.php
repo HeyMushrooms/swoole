@@ -10,7 +10,7 @@
     $http->set(
         [
             'enable_static_handler'=>true,
-            'document_root' => './static/index.html'
+            'document_root' => './static/'
         ]
     );
 
