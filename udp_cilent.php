@@ -18,8 +18,11 @@ fwrite(STDOUT,'请输入信息:');
 $msg = trim(fgets(STDIN));
 
 //发送信息给tcp service服务器
-$client->send($msg);
-
+$res =  $client->send($msg);
+if(!$res){
+	echo '发送失败';
+	exit;
+}
 //接受来自server的数据
 $result = $client->recv();
 echo $result;
