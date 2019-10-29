@@ -9,6 +9,6 @@
     $http->on('request',function($request,$response){
         $get = $request->get;
         var_dump($get);
-        $response->end('<h1>HTTP_SERVER</h1>');
+        $response->end('get='.json_encode($get).'<h1>HTTP_SERVER</h1>');
     });
     $http->start();
