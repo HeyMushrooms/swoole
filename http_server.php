@@ -6,6 +6,14 @@
  * Time: 16:04
  */
     $http =  new swoole_http_server('0.0.0.0',9503);
+
+    $http->set(
+        [
+            'enable_static_handler'=>true,
+            'document_root' => './static/index.html'
+        ]
+    );
+
     $http->on('request',function($request,$response){
         $get = $request->get;
         var_dump($get);
