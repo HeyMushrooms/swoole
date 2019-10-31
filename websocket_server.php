@@ -6,7 +6,12 @@
  * Time: 14:08
  */
 $server = new Swoole\WebSocket\Server("0.0.0.0", 9503);
-
+$server->set(
+    [
+        'enable_static_handler'=>true,
+        'document_root' => './static/'
+    ]
+);
 //监听wecSocket连接打开事件
 $server->on('open', function (Swoole\WebSocket\Server $server, $request) {
     echo "server: handshake success with fd{$request->fd}\n";
