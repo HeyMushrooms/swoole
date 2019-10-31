@@ -8,7 +8,7 @@
 <h1>测试</h1>
 <script>
     var wsUrl ='ws://47.106.204.223:9503';
-    var websocket =new webSocket(wsUrl);
+    var websocket =new WebSocket(wsUrl);
     //实例化对象onopen 属性
     websocket.onopen = function(evt){
         console.log("connect_swoole_success");
