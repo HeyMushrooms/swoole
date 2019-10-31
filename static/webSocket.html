@@ -11,6 +11,7 @@
     var websocket =new WebSocket(wsUrl);
     //实例化对象onopen 属性
     websocket.onopen = function(evt){
+        websocket.send('hello_word');
         console.log("connect_swoole_success");
     }
     websocket.onmessage = function (evt) {
