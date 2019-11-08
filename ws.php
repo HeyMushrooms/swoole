@@ -54,7 +54,7 @@ class  Ws{
             'task'      => 1,
             'message'   =>'message',
         ];
-        $ws->onTask($data);
+        $ws->task($data);
         $ws->push($frame->fd, "this is server");
     }
 
