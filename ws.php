@@ -18,7 +18,9 @@ class  Ws{
         $this->ws->on('open',[$this,'onOpen']);
         $this->ws->on('message',[$this,'onMessage']);
         $this->ws->on('close',[$this,'onClose']);
-
+        //事件
+        $this->ws->on('task',[$this,'onTask']);
+        $this->ws->on('finish',[$this,'onFinish']);
         $this->ws->start();
     }
 
@@ -39,6 +41,12 @@ class  Ws{
      */
     public function onMessage($ws,$frame){
         echo "receive from {$frame->fd}:{$frame->data},opcode:{$frame->opcode},fin:{$frame->finish}\n";
+
+        $data = [
+            'task'      => 1,
+            'message'   =>'message',
+        ];
+        $ws->onTask($data);
         $ws->push($frame->fd, "this is server");
     }
 
@@ -49,6 +57,20 @@ class  Ws{
      */
     public function onClose($ws,$fd){
         echo "client {$fd} closed\n";
+    }
+
+
+    public function onTask($ws,$task_id,$src_worker_id,$data){
+        print_r($data);
+        sleep(10);
+        return 'Task Finish';
+
+    }
+
+
+    public function  onFinish($ws,$task_id,$data){
+        echo "TaskID {$task_id} \n";
+        echo "on finish data:{$data}";
     }
 }
 
