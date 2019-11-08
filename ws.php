@@ -21,6 +21,14 @@ class  Ws{
         //事件
         $this->ws->on('task',[$this,'onTask']);
         $this->ws->on('finish',[$this,'onFinish']);
+        $this->ws->set(
+            [
+                'worker_num'        =>2,
+                'task_worker_num'   =>2,
+            ]
+        );
+
+
         $this->ws->start();
     }
 
