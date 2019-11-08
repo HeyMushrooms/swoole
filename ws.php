@@ -13,7 +13,7 @@ class  Ws{
     public $ws = null;
     public function __construct()
     {
-        $this->ws = new Swoole\WebSocket\Server(HOST,PORT);
+        $this->ws = new Swoole\WebSocket\Server(self::HOST,self::PORT);
 
         $this->ws->on('open',[$this,'onOpen']);
         $this->ws->on('message',[$this,'onMessage']);
