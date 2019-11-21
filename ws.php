@@ -39,6 +39,10 @@ class  Ws{
      */
     public function onOpen($ws,$request){
         var_dump( "server: handshake success with fd{$request->fd}\n");
+
+        Swoole\Timer::tick(2000,function($timer_id){
+            echo "2S :timer_id:{$timer_id}\n";
+        });
     }
 
     /**
@@ -50,11 +54,15 @@ class  Ws{
     public function onMessage($ws,$frame){
         echo "receive from {$frame->fd}:{$frame->data},opcode:{$frame->opcode},fin:{$frame->finish}\n";
 
+
         $data = [
             'task'      => 1,
             'message'   =>'message',
         ];
-        $ws->task($data);
+//        $ws->task($data);
+        Swoole\Timer::tick(5000,function() use($ws,$frame){
+           $ws->push($frame->fd,'5S after');
+        });
         $ws->push($frame->fd, "this is server");
     }
 
