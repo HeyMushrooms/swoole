@@ -39,10 +39,12 @@ class  Ws{
      */
     public function onOpen($ws,$request){
         var_dump( "server: handshake success with fd{$request->fd}\n");
+        if($request->fd == 1){
+            Swoole\Timer::tick(2000,function($timer_id){
+                echo "2S :timer_id:{$timer_id}\n";
+            });
+        }
 
-        Swoole\Timer::tick(2000,function($timer_id){
-            echo "2S :timer_id:{$timer_id}\n";
-        });
     }
 
     /**
