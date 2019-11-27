@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e04ac7d-10bd-4912-8c51-0d2e4b4bf772" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/IO/mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/IO/mysql.php" afterDir="false" />
-    </list>
+    <list default="true" id="6e04ac7d-10bd-4912-8c51-0d2e4b4bf772" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +42,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="442" />
-          <entry key="php" value="2847" />
+          <entry key="php" value="2885" />
           <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="442" />
-          <entry key="PHP" value="2847" />
+          <entry key="PHP" value="2885" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
@@ -101,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IO/mysql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="-66">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -243,7 +241,7 @@
       <workItem from="1574314456624" duration="4633000" />
       <workItem from="1574758699073" duration="1394000" />
       <workItem from="1574819278094" duration="3192000" />
-      <workItem from="1574838023485" duration="2174000" />
+      <workItem from="1574838023485" duration="2842000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1571897358802</created>
@@ -382,7 +380,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50254000" />
+    <option name="totallyTimeSpent" value="50922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -517,8 +515,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IO/mysql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="-66">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
