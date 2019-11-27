@@ -13,3 +13,7 @@ go(function () use ($filename)
     $r =  System::readFile($filename);
     var_dump($r);
 });
+
+go(function(){
+   var_dump(Swoole\Coroutine\System::statvfs('/'));
+});
