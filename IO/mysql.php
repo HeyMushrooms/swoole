@@ -28,7 +28,7 @@ class CoroutineMysql{
             ];
             $this->mysqlSwoole->connect($server);
 
-            $res = $this->mysqlSwoole->query('SELECT * FROM user limit 10');
+            $res = $this->mysqlSwoole->query('SELECT real_anme.mobile  FROM user where id =1 ');
 
             if($res === false){
                 echo '操作失败!';
