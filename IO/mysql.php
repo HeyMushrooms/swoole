@@ -13,7 +13,10 @@ class CoroutineMysql{
     protected  $mysqlSwoole;
     public function __construct()
     {
-        $this->mysqlSwoole = new Swoole\Coroutine\MySQL();
+        go(function (){
+            $this->mysqlSwoole =  new Co\MySQL();
+        });
+
     }
 
     public function query(){
