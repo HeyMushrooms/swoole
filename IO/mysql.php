@@ -36,7 +36,7 @@ class CoroutineMysql{
             }
 
             var_dump($res);
-            echo 'test';
+            var_dump(11111);
 
         });
 
