@@ -28,7 +28,7 @@ class CoroutineMysql{
             ];
             $this->mysqlSwoole->connect($server);
 
-            $res = $this->mysqlSwoole->query('SELECT real_name,mobile  FROM user where user_id =1 ');
+            $res = $this->mysqlSwoole->query('SELECT real_name,mobile  FROM user where user_id =1000 ');
 
             if($res === false){
                 echo '操作失败!';
