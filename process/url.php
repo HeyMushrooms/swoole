@@ -27,6 +27,7 @@ for ($i = 0; $i<7; $i++){
     $pid = $process->start();
     $workers[$pid] = $process;
 }
+var_dump($workers);
 foreach ($workers as $process){
    echo  $process->read();
 }
