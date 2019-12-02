@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e04ac7d-10bd-4912-8c51-0d2e4b4bf772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/process/process.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/process.php" beforeDir="false" afterPath="$PROJECT_DIR$/process/process.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,14 +60,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="442" />
-          <entry key="php" value="3174" />
+          <entry key="php" value="3195" />
           <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="442" />
-          <entry key="PHP" value="3174" />
+          <entry key="PHP" value="3195" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
@@ -135,8 +135,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/process/process.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="198">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -207,8 +207,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="956" />
-    <option name="width" value="1153" />
+    <option name="x" value="738" />
+    <option name="width" value="1369" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -277,7 +277,7 @@
       <workItem from="1574838023485" duration="4000000" />
       <workItem from="1574907246920" duration="4253000" />
       <workItem from="1574989965326" duration="2003000" />
-      <workItem from="1575250780875" duration="644000" />
+      <workItem from="1575250780875" duration="1477000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1571897358802</created>
@@ -416,10 +416,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58980000" />
+    <option name="totallyTimeSpent" value="59813000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="765" y="0" width="922" height="830" extended-state="0" />
+    <frame x="765" y="0" width="922" height="830" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1886574" />
@@ -565,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/process/process.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state relative-caret-position="198">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>

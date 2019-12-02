@@ -6,7 +6,8 @@
  * Time: 9:42
  */
 $process = new swoole_process(function(swoole_process $pro){
-echo 111;
+//echo 111;
+    $pro->exec('/usr/local/bin/php',getcwd().'/http_server.php');
 },true);
 
 $pid = $process->start();
