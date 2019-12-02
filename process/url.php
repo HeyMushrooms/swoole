@@ -5,7 +5,7 @@
  * Date: 2019/12/2
  * Time: 16:28
  */
-echo 'start:'.date('Y-m-d H:i:s');
+echo 'start:'.date('Y-m-d H:i:s').PHP_EOL;
 $urls = [
     'http://www.baidu.com',
     'http://www.baida.com',
@@ -32,6 +32,6 @@ foreach ($workers as $process){
 }
 function curlData($url){
     sleep(1);
-    return $url.'success'.PHP_EOL;
+    return $url.'---success'.PHP_EOL;
 }
 echo 'end:'.date('Y-m-d H:i:s');
