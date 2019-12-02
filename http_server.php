@@ -9,6 +9,7 @@
 
     $http->set(
         [
+            'worker_num' => 5,
             'enable_static_handler'=>true,
             'document_root' => '/root/swoole/static/'
         ]
