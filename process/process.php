@@ -12,3 +12,5 @@ $process = new swoole_process(function(swoole_process $pro){
 
 $pid = $process->start();
 echo $pid;
+
+swoole_process::wait();
