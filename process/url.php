@@ -5,7 +5,7 @@
  * Date: 2019/12/2
  * Time: 16:28
  */
-
+echo 'start:'.date('Y-m-d H:i:s');
 $urls = [
     'http://www.baidu.com',
     'http://www.baida.com',
@@ -34,3 +34,4 @@ function curlData($url){
     sleep(1);
     return $url.'success'.PHP_EOL;
 }
+echo 'end:'.date('Y-m-d H:i:s');
