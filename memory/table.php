@@ -14,6 +14,6 @@ $table->column('name',$table::TYPE_STRING,64);
 $table->column('age',$table::TYPE_INT,8);
 $table->create();
 
-$table->set('1',[1,'dwj','11']);
+$table->set('1',['id'=>1,'name'=>'dwj','age'=>'11']);
 $res = $table->get('1');
 var_dump($res);
